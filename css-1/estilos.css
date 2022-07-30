@@ -1,0 +1,367 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Estilos estandar para todo el sitio */
+/* Encabezado-navegador-footer */
+body{
+    background: linear-gradient(0deg, rgba(9,103,121,1) 60%, rgba(12,177,212,0.8799894957983193) 94%);
+}
+
+.encabezado{
+    background-image: url(../multimedia/imagen-21.jpg);
+    background-position:50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 300px;
+}
+.imagenlogo{
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+@keyframes logo{
+    from{
+        transform:rotatey(0deg)
+    }
+    to{
+        transform:rotatey(360deg);
+    }
+}
+
+header div{
+    display:flex;
+    height: 120%;
+    position: relative;
+    top: 10px;
+}
+header h1{
+    font-family: Helvetica;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    position: absolute;
+    top:240px;
+}
+footer{
+    background-color: rgb(39, 38, 38);
+    font-family: Helvetica;
+    color: white;
+}
+footer ul{
+    list-style: none;
+}
+footer span{
+    color: red;
+}
+.contactos{
+    padding: 5px;
+    background-color: grey;
+    background-clip:border-box;
+    font-family: Helvetica;
+    font-size: 25px;
+    color: white;
+    border-top-right-radius:  10px;
+    border-bottom-left-radius:  10px;
+}
+
+/* Media Queris para encabezado y navegador */
+
+@media screen and (min-width:320px) and (max-width:479px){
+    .encabezado{
+        background-position:50%;
+        display: flex;
+        justify-content:center;
+        justify-items: center;
+        align-items:center;
+        height: 250px;
+    }
+    header div{
+        display:flex;
+        height: 80%;
+        position: relative;
+        top: 10px;
+    }
+    header h1{
+        display: flex;
+        font-family: Helvetica;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        top:170px;
+    }
+}
+@media screen and (min-width:480px) and (max-width:600px){
+    .encabezado{
+        background-position:50%;
+        display: flex;
+        justify-content:center;
+        justify-items: center;
+        align-items:center;
+        height: 250px;
+    }
+    header div{
+        display:flex;
+        height: 80%;
+        position: relative;
+        top: 10px;
+    }
+    header h1{
+        display: flex;
+        font-family: Helvetica;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        top:170px;
+    }
+}
+@media screen and (min-width:601px) and (max-width:768px){
+    .encabezado{
+        background-position:50%;
+        display: flex;
+        justify-content:center;
+        justify-items: center;
+        align-items:center;
+        height: 250px;
+    }
+    header div{
+        display:flex;
+        height: 80%;
+        position: relative;
+        top: 10px;
+    }
+    header h1{
+        display: flex;
+        font-family: Helvetica;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        top:170px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .encabezado{
+        background-position:50%;
+        display: flex;
+        justify-content:center;
+        justify-items: center;
+        align-items:center;
+        height: 250px;
+    }
+    header div{
+        display:flex;
+        height: 80%;
+        position: relative;
+        top: 10px;
+    }
+    header h1{
+        display: flex;
+        font-family: Helvetica;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        top:170px;
+    }
+}
+
+/* Estilos específicos para página "Index.html" */
+
+.contenidoIndex{
+    margin: 20px 40px 20px 40px;
+    padding: 20px;          
+    
+}
+.contenidoIndex__titulo{
+    font-family:Helvetica;
+    font-size: 40px;
+    font-weight: bold;
+    grid-area: contenidoIndex__titulo;
+    padding: 0px;
+
+}
+.contenidoIndex{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "contenidoIndex__titulo contenidoIndex__titulo "
+                         "parrafoNosotros parrafoNosotros"
+                         "imagen-10 imagen-09"
+                         "imagen-02 imagen-20";
+    justify-content:center;
+    justify-items:center;
+    align-items: center;
+}
+.parrafoNosotros{
+    grid-area: parrafoNosotros;
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 75px;
+}
+.imagen-10{
+    transform:scale(1.6);
+    grid-area: imagen-10;
+    margin-bottom: 120px;
+}
+.imagen-09{
+    transform:scale(1.6);
+    grid-area: imagen-09;
+    margin-bottom: 120px;
+}
+.imagen-02{  
+    transform:scale(1.6); 
+    grid-area: imagen-02;
+    margin-bottom: 50px;
+}
+.imagen-20{
+    transform:scale(1.5);
+    grid-area: imagen-20;
+    margin-bottom: 50px;
+}
+
+/* Media Queris para el contenido de Nosotros */
+
+@media screen and (min-width:320px) and (max-width:768px){
+    .contenidoIndex{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "contenidoIndex__titulo"
+                             "parrafoNosotros"
+                             "imagen-10" 
+                             "imagen-09"
+                             "imagen-02" 
+                             "imagen-20";
+        justify-content:center;
+        justify-items:center;
+        align-items: center;
+    }
+    .imagen-02{
+        margin-bottom: 115px;
+    }
+    .contenidoIndex__titulo{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    .contenidoIndex{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "contenidoIndex__titulo"
+                             "parrafoNosotros"
+                             "imagen-10" 
+                             "imagen-09"
+                             "imagen-02" 
+                             "imagen-20";
+        justify-content:center;
+        justify-items:center;
+        align-items: center;
+    }
+    .imagen-02{
+        margin-bottom: 115px;
+    }
+    .contenidoIndex__titulo{
+        text-align: center;
+    }
+}
+
+
+
+/* Estilos específicos para pagina "Política de Calidad.hatml" */
+.parrafoVision{
+    text-align:justify;
+    font-size:20px ;
+    font-family: Helvetica;
+}
+.parrafoMision{
+    text-align:justify;
+    font-size:20px ;
+    font-family: Helvetica;
+}
+.parrafoValores{
+    text-align: justify;
+    font-size:20px ;
+    font-family: Helvetica;
+}
+.contenidoPol__titulo{
+    margin-top: 20px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size:40px ;
+}
+.imagenMisionVisonValores{
+    transform: scale(0.7);
+}
+
+
+/* Estilos para página Servicios */
+
+.cajaImagenes{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:auto auto;
+    grid-template-areas: "imagenMantenimiento imagenPlan" 
+                         "imagenCalibraciones imagenMecanizados-01";
+    justify-content:center;
+    justify-items:center;
+    align-items:center;
+    column-gap: 25px;
+    row-gap: 25px;
+ 
+    grid-area: cajaImagenes;
+
+}
+
+.contenidoServicio{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:auto auto auto auto;
+    grid-template-areas: "contenidoServicio__titulo contenidoServicio__titulo"
+                         "mantenimientoC planTareas"
+                         "calibraciones mecanizados"
+                         "cajaImagenes cajaImagenes";
+    justify-content: center;
+    justify-items:center;
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin: 40px;
+}
+
+
+.contenidoServicio__titulo{
+    font-family: Helvetica;
+    font-size: 40px;
+    grid-area:contenidoServicio__titulo ;
+}
+.carousel-item{
+    color:blue;
+}
+/* Estilos para la página Productos */
+.contenidoProductos{
+    text-align: left;
+    font-family: 'Noto Serif', serif;
+    color: white;
+    margin:40px;
+
+}
+.textosImagenes{
+    font-family: 'Noto Serif', serif;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color:#4F33FF ;
+}
