@@ -1,0 +1,25 @@
+/*ESTILOS PARA EL FOOTER*/
+footer{
+    background-color:black;
+    font-family: Helvetica;
+    color: white;
+
+    footer ul{
+        list-style: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    span{
+        color: red;
+    }
+    .contactos{
+    padding: 5px;
+    background-color: grey;
+    background-clip:border-box;
+    font-family: Helvetica;
+    font-size: 25px;
+    color: white;
+    border-top-right-radius:  10px;
+    border-bottom-left-radius:  10px;
+    }
+}

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* ESTILOS PARA LA PÁGINA "INDEX"*/
+.contenidoIndex {
+  background-color: #e7dede; }
+
+header {
+  background-image: url(../../multimedia/imagen-21-1.jpg);
+  background-position: center;
+  height: 680px;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-content: center; }
+  header h1 {
+    font-family: Helvetica;
+    font-size: 80px;
+    font-weight: bold;
+    color: blue;
+    display: flex;
+    margin-top: 200px; }
+  header .imagenLogo {
+    transform: scale(0.8);
+    display: flex;
+    margin-top: 50px; }
+
+.contenidoIndex {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "contenidoIndex__titulo contenidoIndex__titulo" "parrafoNosotros imagen-09";
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
+  .contenidoIndex .contenidoIndex__titulo {
+    text-align: left;
+    font-family: Helvetica;
+    font-size: 40px;
+    font-weight: bold;
+    grid-area: contenidoIndex__titulo;
+    margin-top: 20px; }
+  .contenidoIndex .parrafoNosotros {
+    grid-area: parrafoNosotros;
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .contenidoIndex .imagen-09 {
+    transform: scale(2);
+    grid-area: imagen-09; }
+
+/*ESTILOS PARA EL FOOTER*/
+footer {
+  background-color: black;
+  font-family: Helvetica;
+  color: white; }
+  footer footer ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  footer span {
+    color: red; }
+  footer .contactos {
+    padding: 5px;
+    background-color: grey;
+    background-clip: border-box;
+    font-family: Helvetica;
+    font-size: 25px;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px; }
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }

@@ -1,0 +1,15 @@
+@import "utilities/index";
+@import "utilities/politica-de-calidad";
+@import "utilities/servicios";
+@import "utilities/productos";
+@import "utilities/contactos";
+@import "base/variable";
+@import "componentes/nav";
+@import "componentes/footer";
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
